@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="title-section">
+                <div class="title">My Library</div>
+                <div class="title-information">Enter books that you have, are, or would like to read!</div>
+                <div class="title-information">Made for practise using DOM Manipulation and LocalStorage.</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="user-input">
+                <div class="title">
+                    <div class="label">Book</div>
+                    <input type="text" id="title" class="input">
+                </div>
+                <div class="author">
+                    <div class="label">Author</div>
+                    <input type="text" id="author" class="input">
+                </div>
+                
+                <div class="have-read">
+                    <div class="label">Have Read?</div>
+                    <select name="read" id="read" class="read">
+                        <option value="Read">Read</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Not Read">Not Read</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="submission">
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="table">
+                <table class="books">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Status</th>
+                            <th>&nbsp&nbsp</th> 
+                        </tr>
+                    </tbody>
+
+                    <tbody class="data">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
