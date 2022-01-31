@@ -1,9 +1,11 @@
 let myLibrary = [];
 
-function Book(title, author, status) {
-    this.title = title;
-    this.author = author;
-    this.status = status;
+class Book {
+    constructor(title, author, status) {
+        this.title = title;
+        this.author = author;
+        this.status = status;
+    }
 }
 
 function returnLocalStorage() {
@@ -183,11 +185,9 @@ submitButton.addEventListener("click", (e) => {
 })
 
 myLibrary = returnLocalStorage();
-console.log(myLibrary);
 // sorts list on load from page
 myLibrary.sort((a, b) => {
     return sortBooks(a, b);
 });
 
-console.log(myLibrary);
 displayBooks();
