@@ -52,7 +52,6 @@ function getBookData(event) {
         alert("Please fill in author!");
         return -1;
     }
-
     document.getElementById("title").value = "";
     document.getElementById("author").value = "";
     document.getElementById("read").value = "Read";
